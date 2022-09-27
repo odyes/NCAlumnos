@@ -85,6 +85,9 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="q9g-Lh-ztt"/>
+                    <connections>
+                        <outlet property="tvAlumno" destination="FJW-Ag-nBO" id="vNq-An-dg6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -145,7 +148,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="88" id="N0F-iS-XRQ" customClass="CeldaMateriasController" customModule="NavControllerAlumno" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="celdaMateria" rowHeight="88" id="N0F-iS-XRQ" customClass="CeldaMateriasController" customModule="NavControllerAlumno" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="88"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="N0F-iS-XRQ" id="vuf-jj-cNo" customClass="CeldaMateriasController" customModule="NavControllerAlumno" customModuleProvider="target">
@@ -178,6 +181,7 @@
                                         <connections>
                                             <outlet property="lblCodigo" destination="r6a-4H-gE8" id="a0K-pL-h1R"/>
                                             <outlet property="lblMateria" destination="NFb-VG-CZE" id="Me9-5N-DZz"/>
+                                            <outlet property="lblNombre" destination="NFb-VG-CZE" id="6hh-bh-7FX"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
