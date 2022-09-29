@@ -56,9 +56,9 @@ class AlumnosController: UIViewController, UITableViewDelegate, UITableViewDataS
         materias3.append(Materia(nombre: "Dibujo", codigo: "DIB2"))
       
         ///
-        alumnos.append(Alumno(nombre: "Alejandra Esquer", carrera: "IPM", matricula: "209004", edad: 20, materias: materias1))
-        alumnos.append(Alumno(nombre: "Alejandra Esquer", carrera: "IPM", matricula: "209004", edad: 20, materias: materias2))
-        alumnos.append(Alumno(nombre: "Alejandra Esquer", carrera: "IPM", matricula: "209004", edad: 20, materias: materias3 ))
+        alumnos.append(Alumno(nombre: "Alejandra Esquer", carrera: "IPM", matricula: "209004", edad: 21, materias: materias1))
+        alumnos.append(Alumno(nombre: "Natalia Lùjan", carrera: "IPM", matricula: "199415", edad: 21, materias: materias2))
+        alumnos.append(Alumno(nombre: "Cèsar Amaya", carrera: "IPM", matricula: "199785", edad: 20, materias: materias3 ))
         
       
     }
