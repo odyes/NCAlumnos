@@ -107,16 +107,14 @@
 		3D1D075728DCB1EA006F4455 /* NavControllerAlumno */ = {
 			isa = PBXGroup;
 			children = (
+				3DD1CF1528E5E41800263C9A /* New Group */,
+				3DD1CF1628E5E41E00263C9A /* Controladores */,
 				3D1D075828DCB1EA006F4455 /* AppDelegate.swift */,
-				3D1D075A28DCB1EA006F4455 /* AlumnosController.swift */,
 				3D1D075C28DCB1EB006F4455 /* Main.storyboard */,
-				3D85A6D028E34F65006FBE3F /* CeldaMateriasController.swift */,
 				3D85A6D228E34F79006FBE3F /* Materia.swift */,
-				3D85A6CE28E341D0006FBE3F /* DetallesAlumnoController.swift */,
 				3D1D075F28DCB1F5006F4455 /* Assets.xcassets */,
 				3D1D076128DCB1F5006F4455 /* LaunchScreen.storyboard */,
 				3D1D076428DCB1F5006F4455 /* Info.plist */,
-				3D1D078628DCB7CE006F4455 /* CeldaAlumnoController.swift */,
 				3D1D078828DCB831006F4455 /* Alumno.swift */,
 			);
 			path = NavControllerAlumno;
@@ -138,6 +136,24 @@
 				3D1D077A28DCB1F5006F4455 /* Info.plist */,
 			);
 			path = NavControllerAlumnoUITests;
+			sourceTree = "<group>";
+		};
+		3DD1CF1528E5E41800263C9A /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "New Group";
+			sourceTree = "<group>";
+		};
+		3DD1CF1628E5E41E00263C9A /* Controladores */ = {
+			isa = PBXGroup;
+			children = (
+				3D85A6D028E34F65006FBE3F /* CeldaMateriasController.swift */,
+				3D85A6CE28E341D0006FBE3F /* DetallesAlumnoController.swift */,
+				3D1D075A28DCB1EA006F4455 /* AlumnosController.swift */,
+				3D1D078628DCB7CE006F4455 /* CeldaAlumnoController.swift */,
+			);
+			name = Controladores;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

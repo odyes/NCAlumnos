@@ -8,9 +8,8 @@
 
 import UIKit
 
-class DetallesAlumnosController : UIViewController{
+class DetallesAlumnosController : UIViewController, UITableViewDelegate, UITableViewDataSource{
     
-    @IBOutlet var tvAlumnos: UIView!
     @IBOutlet weak var lblEdad: UILabel!
     @IBOutlet weak var lblCarrera: UILabel!
     @IBOutlet weak var lblMatricula: UILabel!
@@ -29,5 +28,24 @@ class DetallesAlumnosController : UIViewController{
             self.title = "Detalles de Alumnos"
         }
         
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 88
+    }
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return alumno!.materias.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let celda = tableView.dequeueReusableCell(withIdentifier: "celdaMateria") as? CeldaMateriasController
+        celda?.lblNombre.text = alumno!.materias[indexPath.row].nombre
+        celda?.lblCodigo.text = alumno!.materias[indexPath.row].codigo
+        return celda!
     }
 }
